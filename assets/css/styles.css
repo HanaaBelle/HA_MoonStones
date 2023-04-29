@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'serling_gallerie';
+    src: url('../fonts/serling_galleria/SerlingGalleria_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BUTTERSHINE';
+    src: url('../fonts/BUTTERSHINE SERIF.otf') format('truetype');
+}
+.title-gallery-item{
+    font-family: 'BUTTERSHINE', serif;
+    text-shadow: 5px 5px 25px rgb(63,31,3);
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+}
+
+.input-field{
+    font-family: 'serling_gallerie', serif;
+    text-shadow: 5px 5px 25px rgb(63,31,3);
+    font-weight: bold;
+    color: black;
+}
+
+.icon{
+    font-family: 'serling_gallerie', serif;
+    text-shadow: 5px 5px 25px rgb(139, 6, 22);
+    font-weight: bold;
+    font-size: 1em;
+}
