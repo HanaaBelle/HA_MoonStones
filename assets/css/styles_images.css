@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'BUTTERSHINE';
+    src: url('../fonts/BUTTERSHINE SERIF.otf') format('truetype');
+}
+
 body {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -10,4 +16,25 @@ body {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.copyright{
+    align-items: center;
+    text-align: center;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+li, a{
+    font-family: 'BUTTERSHINE', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
 }

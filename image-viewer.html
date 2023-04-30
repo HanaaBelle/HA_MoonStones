@@ -8,21 +8,39 @@
     <link rel="icon" type="image/x-icon" href="images/moonstonessticker.png">
     <link rel="stylesheet" href="assets/css/styles_images.css">
 
-    </head>
+</head>
 <body>
 
-<img src="" alt="Image" id="image" />
+<div class="image">
+    <img src="" alt="Image" id="image"/>
+</div>
+
+
+
+<div class="copyright">
+    <ul>
+        <li>
+            All rights reserved <br>
+            Photographed by:
+            <a href="mailto:hanaabelhamidi@gmail.com">
+                 N. Belhamidi
+            </a>
+        </li>
+    </ul>
+</div>
+
 
 <script>
 
     const imageElement = document.getElementById('image');
-const imageUrl = new URLSearchParams(window.location.search).get('src');
-if (imageUrl) {
-    imageElement.src = imageUrl;
-} else {
-    window.history.back();
-}
+    const imageUrl = new URLSearchParams(window.location.search).get('src');
+    if (imageUrl) {
+        imageElement.src = imageUrl;
+    } else {
+        window.history.back();
+    }
 </script>
+
 
 </body>
 
