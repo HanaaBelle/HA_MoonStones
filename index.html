@@ -1354,30 +1354,8 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Script marche avec les anciennes versions de certains navigateurs -->
-
-<script>
-    document.querySelector('a').addEventListener('click', function (event) {
-        event.preventDefault();
-        window.open(this.href, '_blank');
-    });
-</script>
-
-<!-- Script marche avec les nouvelles versions de navigateurs -->
-
-<script>
-    const images = document.getElementsByTagName('img');
-
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.cursor = 'pointer';
-
-        images[i].addEventListener('click', function () {
-            const imageUrl = encodeURIComponent(this.src);
-            window.location.href = `image-viewer.html?src=${imageUrl}`;
-        });
-
-    }
-</script>
+<!-- Script pour afficher une image dans un nouvel onglet avec bouton back -->
+<script src="assets/js/image-viewer.js"></script>
 
 </body>
 </html>
