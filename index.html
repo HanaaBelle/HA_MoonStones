@@ -1221,7 +1221,7 @@
                     color: black;">
                     Gold, Silver Or Platinum Shine In A Very Attractive Way!<br>
                     But Nothing Is More Beautiful Than A Fine Stones 💎
-            </strong>
+                </strong>
                 <strong style="font-family: 'serling_gallerie', serif;
                     text-shadow: 5px 5px 25px rgb(145,57,57);
                     font-weight: bold;
@@ -1253,7 +1253,7 @@
             <form id="form1" method="post" action="https://formsubmit.co/28087121a66208160c22c462232d94eb">
                 <div class="row">
                     <div class="col-6 col-12-mobile">
-                        <label for="name" ></label>
+                        <label for="name"></label>
                         <input class="input-field" type="text" name="name" id="name" placeholder="Name">
                     </div>
                     <div class="col-6 col-12-mobile">
@@ -1366,31 +1366,17 @@
 <!-- Script marche avec les nouvelles versions de navigateurs -->
 
 <script>
-    let tab_img_gems_ids = ["chakra", "amethyst", "quartzcherry", "amazonit", "tigereye", "opalin", "celestin",
-        "jadeit", "coral", "redobsidien", "aventurin", "magnesit", "multicoloredturmalin", "serpentin", "galaxystone",
-        "agategreenonyx", "rosemoonstone", "amberchampagn", "orangecalcit", "sodalit", "roseagate", "amberofbaltic",
-        "prehnit", "rosehowlit", "indianagate", "whitehowlit", "ambercognac", "cateye", "snowflakeobsidian",
-        "landscapejasper", "mossagate", "lapislazuli", "garnet", "snakejasper", "apatite", "bullseye", "unakit",
-        "sunstone", "fuchsite", "hemimorphite", "yellowcateye", "malachite", "agatebluelace", "hotpinkquartz",
-        "quartztourmalin", "redjasper", "carnelian", "darkcard", "moonstonessticker"];
+    const images = document.getElementsByTagName('img');
 
-    for (let i = 0; i < tab_img_gems_ids.length; i++) {
-        document.getElementById(tab_img_gems_ids[i]).addEventListener('click', function () {
-            const imageUrl = this.src;
-            const newWindow = window.open('', '_blank');
-            newWindow.document.write(
-                '<html>' +
-                '<head>' +
-                '<title>' + tab_img_gems_ids[i] + '</title>' +
-                '</head>' +
-                '<body>' +
-                '<img src="' + imageUrl + '" style="width: 100%;"/>' +
-                '</body>' +
-                '</html>');
-            newWindow.document.close();
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.cursor = 'pointer';
+
+        images[i].addEventListener('click', function () {
+            const imageUrl = encodeURIComponent(this.src);
+            window.location.href = `image-viewer.html?src=${imageUrl}`;
         });
-    }
 
+    }
 </script>
 
 </body>
