@@ -16,14 +16,72 @@
 
 .input-field{
     font-family: 'BUTTERSHINE', serif;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 1em;
+}
+
+.ombre_titre_grenat,
+.icon,
+.ombre_titre_marron,
+.ombre_titre_rose,
+#bouton_scroll,
+#button,
+.facebook,
+.instagram{
+    font-family: 'serling_gallerie', serif;
+    font-weight: bold;
+}
+
+.ombre_titre_grenat, .icon{
+    text-shadow: 5px 5px 25px rgb(139,6,22);
+}
+
+#bouton_scroll, #button{
+    text-shadow: 5px 5px 25px rgb(239,114,114);
+}
+
+.ombre_titre_marron,
+.input-field{
+    text-shadow: 5px 5px 25px rgb(63,31,3);
+    color: black;
+}
+
+{
+    font-family: 'serling_gallerie', serif;
     text-shadow: 5px 5px 25px rgb(63,31,3);
     font-weight: bold;
     color: black;
 }
 
-.icon{
-    font-family: 'serling_gallerie', serif;
-    text-shadow: 5px 5px 25px rgb(139, 6, 22);
+.ombre_titre_rose,
+.facebook,
+.instagram{
+    text-shadow: 5px 5px 25px rgb(145,57,57);
+}
+
+.ombre_titre_rose{
+    color: black;
+}
+
+.prix{
     font-weight: bold;
-    font-size: 1em;
+    color:darkred;
+}
+
+.facebook{
+    color: #1b33ce;
+}
+
+.instagram{
+    color: #710bc2;
+}
+
+.liste-copyright{
+    font-family: 'BUTTERSHINE', serif;
+    font-weight: bold;
+    color: black;
+
 }
