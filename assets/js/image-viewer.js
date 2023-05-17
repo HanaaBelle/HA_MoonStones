@@ -7,7 +7,6 @@ document.querySelector('a').addEventListener('click', function (event) {
 
 //Script marche avec les nouvelles versions de navigateurs
 
-
 const images = document.getElementsByTagName('img');
 
 for (let i = 0; i < images.length; i++) {

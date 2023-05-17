@@ -36,22 +36,18 @@
 }
 
 .ombre_titre_grenat, .icon{
-    text-shadow: 5px 5px 25px rgb(139,6,22);
 }
 
 #bouton_scroll, #button{
-    text-shadow: 5px 5px 25px rgb(239,114,114);
 }
 
 .ombre_titre_marron,
 .input-field{
-    text-shadow: 5px 5px 25px rgb(63,31,3);
     color: black;
 }
 
 {
     font-family: 'serling_gallerie', serif;
-    text-shadow: 5px 5px 25px rgb(63,31,3);
     font-weight: bold;
     color: black;
 }
@@ -59,7 +55,6 @@
 .ombre_titre_rose,
 .facebook,
 .instagram{
-    text-shadow: 5px 5px 25px rgb(145,57,57);
 }
 
 .ombre_titre_rose{
